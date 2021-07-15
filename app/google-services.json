@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694021318216",
+    "project_id": "mythapps-3e87b",
+    "storage_bucket": "mythapps-3e87b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694021318216:android:78ffb52f0fb86ee8609a7d",
+        "android_client_info": {
+          "package_name": "com.example.mythapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694021318216-nmho4vi3b22o232ksbdn6mm19u31bsrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUmIks25O9tlMJIzacNnlY2r8MTYutfVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694021318216-nmho4vi3b22o232ksbdn6mm19u31bsrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

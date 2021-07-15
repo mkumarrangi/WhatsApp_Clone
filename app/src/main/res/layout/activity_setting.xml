@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@color/tealGreenDark">
+
+    <ImageView
+        android:id="@+id/backArrowSetting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/leftarrow" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/backArrowSetting">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_setting"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="5dp"
+                android:alpha="1"
+                android:padding="5dp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/UpdateImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/uploadgradient"
+                app:srcCompat="@android:drawable/ic_input_add"
+                app:tint="@color/tealGreenDark" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/userLayout"
+        android:background="@drawable/messagewritinggradient"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/linearLayout1Setting">
+
+        <TextView
+            android:id="@+id/usernameSetting"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="UserName :" />
+
+        <EditText
+            android:id="@+id/changedUserNameSetting"
+            android:layout_width="270dp"
+            android:padding="10dp"
+            android:paddingLeft="-10dp"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:inputType="textPersonName"
+            android:hint="username" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/userLayout"
+        android:layout_alignStart="@+id/userLayout"
+        android:layout_alignLeft="@+id/userLayout"
+        android:layout_alignEnd="@+id/userLayout"
+        android:layout_alignRight="@+id/userLayout"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/messagewritinggradient"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/statusSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Status :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/statusTextSetting"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:hint="Enter Your Thought"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:paddingLeft="-10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveSetting"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusLayout"
+        android:layout_alignEnd="@+id/statusLayout"
+        android:layout_alignRight="@+id/statusLayout"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="Save"
+        android:textColor="@color/tealGreenDark"
+        android:textSize="20sp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="12dp" />
+
+    <LinearLayout
+        android:id="@+id/settingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:layout_alignTop="@id/saveSetting"
+        android:layout_marginTop="158dp"
+        android:background="@drawable/setting_menu_gradient"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="80dp">
+
+        <TextView
+            android:id="@+id/privacyPolice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/padlock"
+            android:paddingLeft="50dp"
+            android:text="  Privacy Policy"
+            android:textColor="@color/tealGreenDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/informationbutton"
+            android:paddingLeft="50dp"
+            android:text="  About Us"
+            android:textColor="@color/tealGreenDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inviteAFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/group"
+            android:paddingLeft="50dp"
+            android:text="  Invite a Friend"
+            android:textColor="@color/tealGreenDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/notification"
+            android:paddingLeft="50dp"
+            android:text="  Notification"
+            android:textColor="@color/tealGreenDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/helpSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/helpwebbutton"
+            android:paddingLeft="50dp"
+            android:text="  Help"
+            android:textColor="@color/tealGreenDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
